@@ -5,15 +5,20 @@ using UnityEngine.UI;
 
 public class Boss : MonoBehaviour {
 
+    [Tooltip("Healt from 1 to 100")]
     public int health;
+    [Tooltip("How much and what type of enemys gonna span when player fight with Boss")]
     public Enemy[] enemies;
+    [Tooltip("Enemy spawn time")]
     public float spawnOffset;
 
     private int halfHealth;
     private Animator anim;
 
+    [Tooltip("Amount of dealing damage to player when boss collide with player")]
     public int damage;
 
+    [Header("VFX")]
     public GameObject blood;
     public GameObject effect;
 
